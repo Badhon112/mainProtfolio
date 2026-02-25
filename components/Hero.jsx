@@ -22,12 +22,15 @@ export default function Hero() {
           {/* text  */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Full Stack Web Developer
+              CLOUD & DEVSECOPS ENGINEER
             </div>
-            <h1 className="h1 mb-4">Hello I am Badhon Biswas</h1>
+            <h1 className="h1 mb-4">Hello I Am Badhon Biswas</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I have a thorough knowledge of all aspects of web development, all
-              the way from MERN Stack to Virtual Reality
+              I have a thorough knowledge of all aspects of DevSecOps, all the
+              way from application development and secure coding to cloud
+              infrastructure provisioning, CI/CD automation, container
+              orchestration, security integration, monitoring, and production
+              deployment on AWS
             </p>
             {/* button  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -36,9 +39,11 @@ export default function Hero() {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <a href="/cv.pdf" download>
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>
+              </a>
             </div>
             <Social
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"
@@ -50,7 +55,7 @@ export default function Hero() {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNumber={2}
+              endCountNumber={3.5}
               badgeText="Years Of Experience"
             />
             {/* <Badge
