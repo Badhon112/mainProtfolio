@@ -43,13 +43,11 @@ const projectData = [
 
 export default function Work() {
   return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
+    <section className="container mx-auto ">
+      <div className="relative mb-12 xl:mb-48">
         <div className=" max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12  xl:h-[400px] flex justify-center flex-col items-center xl:items-start">
           <h2 className="mb-4 text-2xl  tracking-[4px]">Latest Projects</h2>
-          <p className="mb-8">
-            Lets review Some of my Leatest Project
-          </p>
+          <p className="mb-8">Lets review Some of my Leatest Project</p>
           <Link href={"/projects"}>
             <Button>All projects</Button>
           </Link>
@@ -62,9 +60,8 @@ export default function Work() {
             breakpoints={{ 640: { slidesPerView: 2 } }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: true }}
-          >
-            {projectData.slice(0,4).map((project, index) => {
+            pagination={{ clickable: true }}>
+            {projectData.slice(0, 4).map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />

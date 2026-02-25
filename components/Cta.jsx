@@ -20,7 +20,7 @@
 // }
 import React from "react";
 import Link from "next/link";
-import { TextReveal } from "react-animate-components-ts";
+import { SlideIn, TextReveal } from "react-animate-components-ts";
 
 const imaginationToRealityWords = [
   "Prepared",
@@ -40,20 +40,21 @@ const imaginationToRealityWords = [
   "HELP",
   ".",
 ];
-const btn = ["Contact", "Me"];
 export default function Cta() {
   return (
-    <section className="py-24 ">
+    <section className="py-10 ">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <h2 className="h2 max-w-xl text-center mb-8">
-            <TextReveal delay={1} words={imaginationToRealityWords} />
+            <TextReveal delay={0.5} words={imaginationToRealityWords} />
           </h2>
-          <Link href="/contact">
-            <div className="dark:bg-white dark:text-black text-xl rounded-lg p-5 font-bold text-white bg-black">
-              <TextReveal delay={1} words={btn} />
-            </div>
-          </Link>
+          <SlideIn direction="left" delay={1}>
+            <Link href="/contact">
+              <div className="dark:bg-white dark:text-black text-xl rounded-lg p-5 font-bold text-white bg-black">
+                Contact Me
+              </div>
+            </Link>
+          </SlideIn>
         </div>
       </div>
     </section>
