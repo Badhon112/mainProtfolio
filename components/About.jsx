@@ -340,7 +340,7 @@ export default function About() {
                           },
                         )}
                       </div>
-                      <div>
+                      {/* <div>
                         <div className="text-primary">Tools That I Use</div>
                         <div className="border-b border-border"></div>
                         <div>
@@ -348,7 +348,7 @@ export default function About() {
                           • VS Code • Figma • Docker Desktop • Postman • GitHub
                           • AWS Console
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </TabsContent>
