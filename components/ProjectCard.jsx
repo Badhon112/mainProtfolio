@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
   return (
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
-        <div className="relative overflow-hidden w-full h-[300px] flex items-center justify-center dark:bg-secondary">
+        <div className="relative overflow-hidden w-full h-[250px] flex items-center justify-center dark:bg-secondary">
           <Image
             className="absolute bottom-0 shadow-2xl h-full w-full"
             src={project.image}
@@ -31,12 +31,14 @@ export default function ProjectCard({ project }) {
           </div>
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
+      <div className="px-8 py-6 h-full bg-red-50">
         <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
           {project.category}
         </Badge>
-        <h4 className="h-4 mb-1 font-semibold text-xl">{project.name}</h4>
-        <p className="text-lg">{project.description}</p>
+        <h4 className=" mb-1 font-semibold text-xl line-clamp-2  h-14">
+          {project.name}
+        </h4>
+        <p className="text-lg line-clamp-3 h-14">{project.description}</p>
       </div>
     </Card>
   );

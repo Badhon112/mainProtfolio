@@ -10,36 +10,7 @@ import { Pagination } from "swiper/modules";
 //Components
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-const projectData = [
-  {
-    image: "/Profile2.jpg",
-    category: "react js",
-    name: "Search and Filter Product",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat?",
-    link: "/",
-    github: "/ ",
-  },
-  {
-    image: "/Profile2.jpg",
-    category: "react js",
-    name: "Search and Filter Product",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat?",
-    link: "/",
-    github: "/ ",
-  },
-  {
-    image: "/Profile2.jpg",
-    category: "react js",
-    name: "Search and Filter Product",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, placeat?",
-    link: "/",
-    github: "/ ",
-  },
-];
+import { projectData } from "@/lib/Interface";
 
 export default function Work() {
   return (
