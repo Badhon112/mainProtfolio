@@ -17,7 +17,7 @@ export default function Projects() {
       ? project
       : project.category === category;
   });
-  console.log(filteredProjects);
+  // console.log(filteredProjects);
   return (
     <section className="min-h-screen pt-12">
       <div className="container mx-auto">
